@@ -5,6 +5,7 @@ const checkBtn = document.querySelector("#check-button");
 const notesOp = document.querySelectorAll(".no-of-notes");
 const clearDataBtn = document.querySelector("#clear-button");
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
+let changeNotes = [0, 0, 0, 0, 0, 0, 0];
 
 checkBtn.addEventListener("click", () => {
   let bill = Number(billAmount.value);
@@ -19,7 +20,6 @@ checkBtn.addEventListener("click", () => {
   } else {
     errorMsg.innerText = "";
     // calculate no of notes to return
-    let changeNotes = [0, 0, 0, 0, 0, 0, 0];
 
     let change = cash - bill;
     let returnNoOfNotes;
