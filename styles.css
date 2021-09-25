@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #6d28d9;
+  --white:#fff;
+  --red : #FF0000;
+}
+
+body {
+  font-family: "PT Serif", serif;
+}
+/* nav */
+.heading-center {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--white);
+    padding: 0.5rem;
+  }
+  nav {
+    background-color: var(--primary-color);
+  }
+/* Container */
+.container {
+  margin: 4rem auto 7rem;
+  text-align: center;
+}
+
+.heading {
+  color: var(--primary-color);
+}
+
+.description {
+  font-size: larger;
+  margin: 1rem;
+}
+
+.input-label {
+  display: block;
+  font-size: large;
+  font-weight: 700;
+}
+
+.input {
+  font-size: 14px;
+  outline: #fff;
+  padding: 0.6rem 1rem;
+  margin: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 258px;
+}
+
+.button {
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  outline: #fff;
+  margin: auto;
+  display: block;
+}
+#clear-button{
+  margin-top: 0.8rem;
+}
+#error-message {
+  display: block;
+  font-size: larger;
+  margin: 1rem 0 0;
+  color: var(--red);
+}
+/* remove arrows from input field */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Table */
+.change-table {
+  width: 50%;
+  text-align: justify;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.change-table caption {
+  margin: 1rem auto;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+th,
+td {
+  border: 2px solid var(--primary-color);
+  width: 0%;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+/* footer */
+.name {
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 2rem;
+    color: var(--white);
+  }
+  .list-non-bulleted {
+    list-style-type: none;
+  }
+  
+  .list-inline {
+    display: inline;
+    padding: 0.2rem;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: var(--white);
+  }
+.footer{
+    background-color: var(--primary-color);
+}
+.footer div{
+  text-align: center;
+  padding:1rem;
+}

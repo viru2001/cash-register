@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="heading-center">Cash Register</div>
+    </nav>
+    <main class="container">
+      <div>
+        <p class="description">
+          Enter the bill amount and cash given by the customer and know minimum
+          number of notes to return.
+        </p>
+        <label class="input-label" for="bill-amount">Bill Amount:</label>
+        <input class="input" id="bill-amount" type="number" />
+
+        <label class="input-label" for="cash-given">Cash Given:</label>
+        <input class="input" id="cash-given" type="number" />
+        
+          <button class="button" id="check-button">Check</button>
+        
+        <p id="error-message"></p>
+        <table class="change-table">
+          <caption>
+            Return Change
+          </caption>
+          <tr>
+            <th>No of Notes</th>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+          </tr>
+          <tr>
+            <th>Note</th>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+        </table>
+
+        
+      </div>
+      <button class="button"  id="clear-button">Clear Data</button>
+
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="name">Get In Touch With Me</div>
+      <div>
+        <ul class="list-non-bulleted">
+          <li class="list-inline">
+            <a class="link" href="https://github.com/viru2001" target="_blank"
+              ><img src="./images/footer-icons/github.svg" alt="github icon"
+            /></a>
+          </li>
+          <li class="list-inline">
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/viresh-fegade-43a475148/"
+              target="_blank"
+              ><img
+                src="./images/footer-icons/linkedin.svg"
+                alt="linkedin icon"
+            /></a>
+          </li>
+          <li class="list-inline">
+            <a
+              class="link"
+              href="https://twitter.com/fegade_viresh"
+              target="_blank"
+              ><img src="./images/footer-icons/twitter.svg" alt="twitter icon"
+            /></a>
+          </li>
+          <li class="list-inline">
+            <a
+              class="link"
+              href="https://www.instagram.com/vireshfegade/"
+              target="_blank"
+              ><img
+                src="./images/footer-icons/instagram.svg"
+                alt="instagram icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
