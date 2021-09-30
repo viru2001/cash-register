@@ -38,6 +38,13 @@ const removeOutput = () => {
   }
   moneyToReturn.innerText = "";
 };
+
+const removeNotesToReturn = ()=>{
+  for (let i = 0; i < changeNotes.length; i++) {
+    notesOp[i].innerText = "";
+  }
+  moneyToReturn.innerText = "";
+}
 checkBtn.addEventListener("click", () => {
   let bill = Number(billAmount.value);
   let cash = Number(cashGiven.value);
@@ -69,3 +76,5 @@ checkBtn.addEventListener("click", () => {
 });
 
 clearDataBtn.addEventListener("click", removeOutput);
+billAmount.addEventListener("click",removeNotesToReturn);
+cashGiven.addEventListener("click", removeNotesToReturn);
