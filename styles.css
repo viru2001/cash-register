@@ -77,10 +77,12 @@ body {
 #clear-button{
   margin-top: 0.8rem;
 }
-#error-message {
+#error-message, #money-to-return {
   display: block;
   font-size: larger;
   margin: 1rem 0 0;
+}
+#error-message{
   color: var(--red);
 }
 /* remove arrows from input field */
